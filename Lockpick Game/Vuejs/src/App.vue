@@ -72,7 +72,7 @@ export default {
                 this.NuiOpen = lua.NuiOpen;
                 this.NameResource = lua.NameResource;
                 if (lua.NuiOpen) {
-                    this.position_nui = 'width: '+lua.size+'; left: '+lua.x+'; top: '+lua.y+'; transform: translate(-'+lua.x+', -'+lua.y+') scale('+ lua.scale +');';
+                    this.position_nui = 'left: '+lua.x+'; top: '+lua.y+'; transform: translate(-'+lua.x+', -'+lua.y+') scale('+ lua.scale +');';
                     
                     gsap.registerPlugin(TweenLite);
                     gsap.registerPlugin(TimelineLite);
@@ -347,6 +347,8 @@ body {
 #container {
     position:absolute;
     overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 #cont_wrap {

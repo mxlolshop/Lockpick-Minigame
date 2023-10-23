@@ -1,4 +1,4 @@
-# celularprojeto
+# Lockpick game
 
 ## Project setup
 ```
